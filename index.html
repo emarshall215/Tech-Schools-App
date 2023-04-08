@@ -6,10 +6,12 @@
     <title>Tech Doc Page</title>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body style="background-color: rgba(127, 255, 212, 0.453)" > 
+    <div class="page-container">
     <main id="main-doc">
    <nav id="navbar">
-     <header id="heading">JS Toutorials</header>
+     <header id="heading" style=" background-color:aliceblue; font-size: 30px;">JS Toutorials</header>
+     <br>
      <a class="nav-link" href="#variables_and_types">Variables and Types</a>
      <a class="nav-link" href="#more_notes">More notes</a>
      <a class="nav-link" href="#array_vs_object">Array vs Object</a>
@@ -18,33 +20,35 @@
      <a class="nav-link" href="#functions">Functions</a>
      <a class="nav-link" href="#objects">Objects</a>
    </nav>
-       <section class="main-section" id="variables_and_types">
-         <header>Variables and Types</header>
+   <hr>
+   <br>
+       <section class="main-section"  id="variables_and_types">
+         <header style="font-size: 25px" >Variables and Types</header>
          <p>Like almost every dynamic language, JavaScript is a "duck-typed" language, and therefore every variable is defined using the var keyword, and can contain all types of variables.</p>
 
       <p>We can define several types of variables to use in our code:</p>
-         <code>
+         <code style="background-color: yellow" >
 const myNumber = 3;                   // a number<br>
 const myString = "Hello, World!"      // a string<br>
 const myBoolean = true;               // a boolean
 </code>
     </section><br>
        <section class="main-section" id="more_notes">
-         <header>More notes</header>
+         <header style="font-size: 25px" >More notes</header>
          <ul>
            <li>In JavaScript, the Number type can be both a floating point number and an integer.</li>
            <li>Boolean variables can only be equal to either true or false.</li>
          </ul>
       </section>
        <section class="main-section" id="array_vs_object">
-         <header>Array vs Object</header>
+         <header style="font-size: 25px" >Array vs Object</header>
          <p>There are two more advanced types in JavaScript. An array, and an object. We will get to them in more advanced tutorials.</p>
-         <code>
+         <code style="background-color: yellow" >
 const myArray = [];                    // an array<br>
 const myObject = {};                  // an object</code>
       </section><br>
        <section class="main-section" id="undefined_and_null">
-         <header>Undefined and Null</header>
+         <header style="font-size: 25px" >Undefined and Null</header>
 <p>On top of that, there are two special types called undefined and null.</p>
 
 <p>When a variable is used without first defining a value for it, it is equal to undefined. For example:</p>
@@ -52,15 +56,15 @@ const myObject = {};                  // an object</code>
      const newVariable;<br>
 console.log(newVariable); //prints undefined</code>   </section><br>
        <section class="main-section" id="null">
-         <header>Null</header>
+         <header style="font-size: 25px" >Null</header>
          <p>However, the null value is a different type of value, and is used when a variable should be marked as empty. undefined can be used for this purpose, but it should not be used.</p>
-         <code>
+         <code style="background-color: yellow" >
 const emptyVariable = null;<br>
 console.log(emptyVariable);
          </code>
       </section><br>
        <section class="main-section" id="functions">
-         <header>Functions</header>
+         <header style="font-size: 25px" >Functions</header>
          <p>Functions are code blocks that can have arguments, and function have their own scope. In JavaScript, functions are a very important feature of the program, and especially the fact that they can access local variables of a parent function (this is called a closure).</p> 
          <p>There are two ways to define functions in JavaScript</p>
          <ul>
@@ -68,7 +72,7 @@ console.log(emptyVariable);
            <li>anonymous functions</li>
          </ul>
          <p>To define a named function, we use the function statement as follows:</p>
-         <code>function greet(name)<br>
+         <code style="background-color: yellow" >function greet(name)<br>
 {<br>
     return "Hello " + name + "!";<br>
 }<br>
@@ -82,15 +86,16 @@ console.log(greet("Eric"));      // prints out Hello Eric!</code>
 </ul>
       </section>
        <section class="main-section" id="objects">
-         <header>Objects</header>
+         <header style="font-size: 25px" >Objects</header>
          <p>JavaScript is a functional language, and for object oriented programming it uses both objects and functions, but objects are usually used as a data structure, similar to a dictionary in Python or a map in Java. In this tutorial, we will learn how to use objects as a data structure. The advanced tutorials explain more about object oriented JavaScript.
 
 To initialize an object, use curly braces:</p>
-<code>var emptyObject = {};<br>
+<code style="background-color: yellow" >var emptyObject = {};<br>
 var personObject = {<br>
     firstName : "John",
     lastName : "Smith"<br>
 }</code>
       </section>
     </main>
+  </div>
   </body>
